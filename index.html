@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontAwsome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main css style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart-Login</title>
+</head>
+<body>
+
+<div class="loginForm">
+    <div class="container py-3">
+    <div class="row">
+       
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="loginImage">
+            <img src="images/undraw_Accept_terms_re_lj38.png" alt="" srcset="" class="w-100 ">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="loginContent">
+
+                <div class="toSigninForm ">
+                    <p class="pt-2">Already have an account <a href="#" id="signinBtn"> SIGN IN </a></p>
+                </div>
+                <h1 class="pt-5">Welcome to Focus!</h1>
+                <p class="pb-4">Register Your Account</p>
+               
+            <label for="yourname">Name</label><br>
+             <input type="text" id="yourname" class="w-75 " placeholder="Your Name"><br>
+             <div id="alertName" class="alert alert-danger w-75 h-auto" role="alert">
+                Your Name Should Start With a Capital Letter
+              </div>
+               
+             <label for="youremail" class="mt-4">Email</label><br>
+             <input type="text" id="youremail" class="w-75 " placeholder="Your Email"><br>
+             <div id="alertEmail" class="alert alert-danger w-75 h-auto" role="alert">
+                Enter Vaild Email!
+              </div>
+
+             <label for="yourpassword" class="mt-4">Password</label><br>
+             <div class="forPass w-75">
+             <input type="password" id="yourpassword" class="w-100" placeholder="Password">
+             <i class="fas fa-low-vision vision"></i>
+             <div id="alertPass" class="alert alert-danger w-100 h-auto" role="alert">
+                Enter Strong Password 
+              </div>
+             </div>
+             <input type="button" value="signUp" id="login" class="m-4" >
+                
+            </div>
+
+            <div class="icons d-flex pt-2">
+                <p>Create account with</p>
+                <i class="fab fa-facebook-f ms-3" id="facebook"></i>
+                <i class="fab fa-twitter ms-3" id="twitter"></i>
+                <i class="fab fa-linkedin-in ms-3" id="linkedin"></i>
+               
+            </div>
+        </div>
+      
+    </div>
+    </div>
+</div>
+
+<div class="signUpForm ">
+    <div class="container py-3 ">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="signUpImage ">
+                    <div>
+                    <img src="images/undraw_Working_re_ddwy.png" alt="" srcset="" class="w-100 ">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="signUpContent">
+
+                    <div class="toSignUpForm ">
+                        <p class="pt-2">Don't you have an account<a href="#" id="singUpBtn">SIGN UP </a></p>
+                    </div>
+                    <h1 class="pt-5">Welcome Back</h1>
+                    <p class="pb-4">login Your Account</p>
+                    
+                <label for="email">Your Email</label><br>
+                 <input type="text" id="email" class="w-75" placeholder="Your Name"><br>
+               
+                 <label for="password" class="mt-4">Your Password</label><br>
+                 <div class="forPass w-75">
+                 <input type="password" id="password" class="w-100" placeholder="Password">
+                 <i class="fas fa-low-vision vision"></i>
+                 <p class="py-1"><span> Forget Password?</span></p>
+                 </div>
+
+
+
+
+
+
+
+                    <!-- Button trigger modal -->
+ <!-- <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+
+..
+   </button> -->
+
+   <input type="button" value="login" id="signUp" class="m-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+   <div class="theModal">
+   <!-- Modal -->
+   <!-- <div class="modal-backdrop fade "></div> -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+        
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-danger">
+           No accout found with this email address Or with this password ! 
+         </div>
+      
+       </div>
+     </div>
+   </div>
+   </div>
+
+
+   
+                 <!-- <input type="button" value="SignUp" id="signUp" class="m-4">  -->
+                    
+
+
+                 <div class="icons d-flex pt-5 pb-2">
+                    <p>login with</p>
+                    <i class="fab fa-facebook-f ms-3" id="facebook"></i>
+                    <i class="fab fa-twitter ms-3" id="twitter"></i>
+                    <i class="fab fa-linkedin-in ms-3" id="linkedin"></i>
+                   
+                </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="homePage">
+    <header>
+    <div class="navbar">
+        
+            <li><a href="#" class="logo">SMART LOGIN</a></li>
+            <li><a href="#" class="logOut">logout</a> </li>
+        
+    </div>
+  </header>
+
+  <div class="homeContent">
+      <h2>Welcome <span id="userName">Amira</span></h2>
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

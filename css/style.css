@@ -1,0 +1,234 @@
+body {
+    background-image: url(../images/images.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  
+
+}
+/* style for login   and signup Forms */
+.loginForm,
+.signUpForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.loginForm .container,
+.signUpForm  .container {
+    background-color: white;
+    border-radius: 40px;
+   
+  
+    
+    
+}
+
+.loginForm .loginImage img,
+.signUpForm .signUpImage img {
+    border-radius: 40px;
+}
+.loginForm .container .loginContent,
+.signUpForm .container .signUpContent {
+    position: relative;
+}
+.loginForm .container .loginContent .toSigninForm,
+.signUpForm .container .signUpContent .toSignUpForm  {
+    position: absolute;
+    right: 10px;
+}
+.loginForm .container  h1,
+.signUpForm .container h1 {
+    font-weight: 800;
+}
+.loginForm .container  p,
+.signUpForm .container p {
+    color: #9696c3;
+    font-weight: 600;
+}
+.loginForm .container label ,
+.signUpForm .container label{
+    font-weight: 600;
+}
+.loginForm .container  p  a,
+.signUpForm .container p a {
+    text-decoration: none;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #9696c3;
+    color: #9696c3;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+.loginForm .container  p  a:hover,
+.signUpForm .container p a:hover {
+    color: white;
+    background-color:#9696c3 ;
+}
+.loginForm #login,
+.signUpForm #signUp {
+    background-image: linear-gradient(45deg, #7b4fc2, #3340de);
+    border: none;
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 1px 5px   #7b4fc2;
+}
+
+.loginForm input,
+.signUpForm input{
+    border: none;
+    border: 1px solid #7b4fc2;
+    border-radius: 8px;
+    padding: 5px;
+}
+.loginForm input:focus,
+.signUpForm input:focus {
+    outline-color: #7b4fc2;
+}
+
+.loginForm .icons i,
+.signUpForm .icons i{
+   font-size: 20px;
+   cursor: pointer;
+}
+#facebook {
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#4267B2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+}
+
+#twitter {
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#1DA1F2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+}
+
+#linkedin {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#2867B2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+}
+
+
+
+.forPass  {
+    position: relative;
+}
+.forPass .vision {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: rgb(196, 196, 196);
+    
+}
+
+.signUpForm span {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
+.theModal {
+    display: none;
+}
+/* .show {
+    display: none;
+} */
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    border-color: transparent;
+    background-color: transparent;
+}
+/* style for alert {validation} */
+#alertName {
+   display: none;
+}
+#alertEmail {
+    display: none;
+}
+#alertPass {
+    display: none;
+}
+/* style for Home page */
+
+.homePage header{
+    background-color:  #454c99;;
+    box-shadow: 2px 2px 50px #471694 ;
+    padding: 20px 40px;
+}
+.homePage header .navbar li {
+    list-style: none;
+}
+.homePage header .navbar li a {
+    text-decoration: none;
+    color: white;
+    
+} 
+.homePage header .navbar li a.logo {
+    font-size: 25px;
+}
+.homePage header .navbar li a.logOut {
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+   border:2px solid white;
+   box-shadow: 1px 1px 5px whitesmoke;
+}
+.homePage header .navbar li a.logOut:hover {
+    background-color: white;
+    color: black;
+}
+.homeContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    
+}
+.homeContent h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.loginForm {
+    display: block;
+}
+
+.signUpForm {
+    display: none;
+}
+.homePage {
+    display: none;
+
+   
+}
